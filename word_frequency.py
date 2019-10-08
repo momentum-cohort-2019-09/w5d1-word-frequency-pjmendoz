@@ -7,7 +7,29 @@ STOP_WORDS = [
 
 def print_word_freq(file):
     """Read in `file` and print out the frequency of words in that file."""
-    pass
+    with open(file) as my_hw: 
+         my_hw = my_hw.read().lower()
+
+         my_hw = my_hw.split()
+
+         print(my_hw)
+
+    def clean_text(text):
+        all_letters = "abcdefghijklmnopqrstuvwxyz"
+        text_to_keep = ""
+        for char in text: 
+            if char in all_letters: 
+                text_to_keep += char
+        return text_to_keep    
+
+
+# print_word_freq(seneca_falls.txt)
+
+# print(print_word_freq)
+
+#remove stop words
+#calculate the frequency of each word -- needs a dictionary
+#utilize .count to put each word in a dictionary
 
 
 if __name__ == "__main__":
