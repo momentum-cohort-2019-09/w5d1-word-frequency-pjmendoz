@@ -29,20 +29,25 @@ def print_word_freq(file):
             return keep_text
 
          clean_words =[]
-
-         for word in my_words:
+         
+         for word in my_words: 
             clean_words.append(clean_text(word))
 
-             
-         if clean_words != STOP_WORDS:
-             return clean_words 
          
+         print(clean_words)
+
+         def clean_words(words): 
 
 
+
+        #  def remove_stop_words(text): 
+        #     keep_text = ""
+        #     for word in text: 
+        #         if word != STOP_WORDS
 
 #read in the file -- done
 #split the file in words -- done
-#clean each word -- done? 
+#clean each word -- done
 #remove stop words
 #calculate the frequency of each word -- needs a dictionary
 #utilize .count to put each word in a dictionary
